@@ -8246,7 +8246,7 @@ IC-09995</description>
 <instance part="C4" gate="G$1" x="144.78" y="111.76"/>
 <instance part="JP8" gate="G$1" x="180.34" y="129.54" rot="MR270"/>
 <instance part="GND2" gate="1" x="180.34" y="114.3"/>
-<instance part="JP9" gate="G$1" x="66.04" y="114.3" rot="R180"/>
+<instance part="JP9" gate="G$1" x="66.04" y="114.3" smashed="yes" rot="R180"/>
 <instance part="JP3" gate="G$1" x="231.14" y="43.18"/>
 <instance part="LOGO1" gate="G$1" x="208.28" y="45.72"/>
 <instance part="LOGO2" gate="G$1" x="187.96" y="38.1"/>
