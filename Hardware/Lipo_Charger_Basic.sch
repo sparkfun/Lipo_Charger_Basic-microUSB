@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8225,7 +8225,7 @@ IC-09995</description>
 <text x="171.45" y="11.43" size="2.54" layer="94">N. Seidle</text>
 <text x="58.674" y="123.952" size="1.778" layer="97">microUSB</text>
 <text x="148.59" y="7.112" size="2.54" layer="94">Revised by: Patrick Alberts</text>
-<text x="236.22" y="7.62" size="2.54" layer="94">V01</text>
+<text x="236.22" y="7.62" size="2.54" layer="94">V10</text>
 <text x="147.32" y="137.16" size="1.778" layer="97">Lipo Battery</text>
 </plain>
 <instances>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -64,7 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="90" name="Modules" color="5" fill="1" visible="no" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -149,8 +149,8 @@
 <text x="19.177" y="7.112" size="1.778" layer="21" font="vector" ratio="15">-</text>
 <text x="20.955" y="5.461" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">-</text>
 <text x="20.955" y="2.921" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">+</text>
-<text x="23.622" y="0.635" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">LiPo Charger Basic</text>
-<text x="22.86" y="8.89" size="0.8128" layer="16" font="vector" ratio="15" rot="MR0">V01</text>
+<text x="28.321" y="0.635" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">LiPo Charger Basic</text>
+<text x="22.86" y="8.89" size="0.8128" layer="16" font="vector" ratio="15" rot="MR0">V10</text>
 <text x="16.637" y="-11.43" size="1.778" layer="51" font="vector" ratio="10">N. Seidle</text>
 <text x="-1.93548125" y="-14.378940625" size="1.778" layer="51" font="vector" ratio="10">Revised by:Patrick Alberts</text>
 <dimension x1="-7.62" y1="0" x2="-7.62" y2="10.16" x3="-10.16" y3="5.08" textsize="1.778" textratio="15" layer="47"/>
@@ -656,6 +656,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
