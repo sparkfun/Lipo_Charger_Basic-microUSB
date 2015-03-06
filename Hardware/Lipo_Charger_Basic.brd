@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -78,7 +78,7 @@
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
 <layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
@@ -656,9 +656,6 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -750,14 +747,16 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="D11" library="SparkFun-LED" package="LED-0603" value="RED" x="9.46658125" y="8.89" rot="R270">
+<element name="D11" library="SparkFun-LED" package="LED-0603" value="RED" x="9.46658125" y="8.89" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="DIO-00819" x="9.46658125" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="RED" x="9.46658125" y="8.89" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="8.19658125" y="8.6995" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="9.84758125" y="8.6995" size="0.4064" layer="27"/>
 </element>
 <element name="R3" library="SparkFun-Resistors" package="0603-RES" value="330" x="6.294121875" y="8.9027" smashed="yes" rot="R180">
-<attribute name="NAME" x="8.834121875" y="7.6327" size="0.4064" layer="25" font="vector" rot="R180"/>
 <attribute name="PROD_ID" value="RES-00818" x="6.294121875" y="8.9027" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="330" x="6.294121875" y="8.9027" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="7.564121875" y="9.0297" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="5.659121875" y="9.0297" size="0.4064" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="U1" library="SparkFun-PowerIC" package="SOT23-5" value="MCP73831" x="7.713984375" y="4.5974" rot="R90">
 <attribute name="PROD_ID" value="IC-09995" x="7.713984375" y="4.5974" size="1.778" layer="27" rot="R90" display="off"/>
@@ -766,13 +765,17 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="RES-08296" x="13.454384375" y="1.257303125" size="1.778" layer="27" display="off"/>
 </element>
 <element name="JP2" library="SparkFun" package="STAND-OFF" value="STAND-OFF" x="13.97" y="5.08"/>
-<element name="C3" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="6.29158125" y="7.508240625">
+<element name="C3" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="6.29158125" y="7.508240625" smashed="yes">
 <attribute name="PROD_ID" value="CAP-08280" x="6.29158125" y="7.508240625" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="4.7uF" x="6.29158125" y="7.508240625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="5.14858125" y="7.381240625" size="0.4064" layer="25" font="vector"/>
+<attribute name="VALUE" x="6.54558125" y="7.381240625" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="9.59358125" y="7.536184375" rot="R180">
-<attribute name="PROD_ID" value="CAP-08280" x="9.59358125" y="7.536184375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" value="4.7uF" x="9.59358125" y="7.536184375" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="4.7uF" x="9.375140625" y="7.505703125" smashed="yes" rot="R180">
+<attribute name="PROD_ID" value="CAP-08280" x="9.375140625" y="7.505703125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value="4.7uF" x="9.375140625" y="7.505703125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="8.994140625" y="7.759703125" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="11.661140625" y="7.759703125" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="JP8" library="SparkFun-Connectors" package="1X02" value="M02PTH" x="17.78" y="6.35" rot="MR270"/>
 <element name="JP9" library="SparkFun-Connectors" package="USB-AB-MICRO-SMD_V03" value="Micro USB" x="1.341121875" y="5.08" smashed="yes">
@@ -827,11 +830,7 @@ design rules under a new name.</description>
 <wire x1="19.05" y1="3.81" x2="17.78" y2="3.81" width="0.4064" layer="16"/>
 <wire x1="15.3416" y1="8.89" x2="19.05" y2="8.89" width="0.4064" layer="16"/>
 <via x="15.186659375" y="8.735059375" extent="1-16" drill="0.508"/>
-<wire x1="10.43178125" y1="6.02488125" x2="10.43178125" y2="7.524384375" width="0.4064" layer="1"/>
-<wire x1="10.43178125" y1="7.524384375" x2="10.44358125" y2="7.536184375" width="0.4064" layer="1"/>
-<wire x1="10.44358125" y1="7.536184375" x2="10.5553375" y2="7.647940625" width="0.4064" layer="1"/>
-<wire x1="10.5553375" y1="7.647940625" x2="12.7762" y2="7.647940625" width="0.4064" layer="1"/>
-<wire x1="12.7762" y1="7.647940625" x2="13.86331875" y2="8.735059375" width="0.4064" layer="1"/>
+<wire x1="12.6339625" y1="7.505703125" x2="13.86331875" y2="8.735059375" width="0.4064" layer="1"/>
 <wire x1="13.86331875" y1="8.735059375" x2="15.186659375" y2="8.735059375" width="0.4064" layer="1"/>
 <wire x1="15.3416" y1="8.89" x2="15.186659375" y2="8.735059375" width="0.4064" layer="16"/>
 <contactref element="JP1" pad="2"/>
@@ -839,6 +838,9 @@ design rules under a new name.</description>
 <wire x1="18.05" y1="4.08" x2="17.78" y2="3.81" width="0.4064" layer="1"/>
 <wire x1="9.014084375" y1="5.5474" x2="9.9543" y2="5.5474" width="0.4064" layer="1"/>
 <wire x1="9.9543" y1="5.5474" x2="10.43178125" y2="6.02488125" width="0.4064" layer="1"/>
+<wire x1="10.43178125" y1="6.02488125" x2="10.43178125" y2="7.2990625" width="0.4064" layer="1"/>
+<wire x1="10.43178125" y1="7.2990625" x2="10.225140625" y2="7.505703125" width="0.4064" layer="1"/>
+<wire x1="12.6339625" y1="7.505703125" x2="10.225140625" y2="7.505703125" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="D11" pad="A"/>
